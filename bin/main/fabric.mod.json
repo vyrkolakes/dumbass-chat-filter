@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "chat-filter-for-dumbasses",
+	"version": "${version}",
+	"name": "Dumbass Filter For Chat",
+	"description": "This is a chat-filter created by vyrkolakes to filter out all the dickheady messages.",
+	"authors": [
+		"vyrko buddy"
+	],
+	"contact": {
+		"homepage": "https://github.com/vyrkolakes/dumbass-chat-filter",
+		"sources": "https://vyrko.vercel.app/",
+		"issues": "https://github.com/vyrkolakes/dumbass-chat-filter/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dumbass-chat-filter/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.vyrkolakes.chatfilter.DumbassChatFilter"
+		],
+		"modmenu": [
+			"com.vyrkolakes.chatfilter.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": ">=19.0.0",
+		"modmenu": ">=15.0.0"
+	}
+}
